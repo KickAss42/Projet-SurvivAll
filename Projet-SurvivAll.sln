@@ -9,6 +9,8 @@ Project("{86568833-4762-7787-2CE3-9E7FD7BC012F}") = "Projet-SurvivAll", "Assembl
 EndProject
 Project("{86568833-4762-7787-2CE3-9E7FD7BC012F}") = "Projet-SurvivAll", "Assembly-UnityScript.unityproj", "{11498127-CD71-FDE3-308F-F3856972A887}"
 EndProject
+Project("{86568833-4762-7787-2CE3-9E7FD7BC012F}") = "Projet-SurvivAll", "Assembly-UnityScript-Editor.unityproj", "{D5C4AAB4-AF51-16B3-B01A-2D2A76999BCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{11498127-CD71-FDE3-308F-F3856972A887}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11498127-CD71-FDE3-308F-F3856972A887}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11498127-CD71-FDE3-308F-F3856972A887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C4AAB4-AF51-16B3-B01A-2D2A76999BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C4AAB4-AF51-16B3-B01A-2D2A76999BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C4AAB4-AF51-16B3-B01A-2D2A76999BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C4AAB4-AF51-16B3-B01A-2D2A76999BCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

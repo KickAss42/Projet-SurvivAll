@@ -42,6 +42,5 @@ C:\Users\Hicham\Bureau\Projet-SurvivAll\Temp\bin\Debug\UnityEngine.xml
 C:\Users\Hicham\Bureau\Projet-SurvivAll\Temp\bin\Debug\UnityEditor.xml
 C:\Users\Hicham\Bureau\Projet-SurvivAll\Temp\bin\Debug\UnityEngine.UI.xml
 C:\Users\Hicham\Bureau\Projet-SurvivAll\Temp\bin\Debug\UnityEngine.Networking.xml
-C:\Users\Hicham\Bureau\Projet-SurvivAll\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\Hicham\Bureau\Projet-SurvivAll\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Hicham\Bureau\Projet-SurvivAll\obj\Debug\Assembly-CSharp-firstpass.pdb

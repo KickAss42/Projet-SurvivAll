@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/JeuLocal.unity
+- path: Assets/map 2.unity
   isLoaded: 1
   isActive: 1

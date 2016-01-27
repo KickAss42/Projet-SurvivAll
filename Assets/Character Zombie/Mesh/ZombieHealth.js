@@ -20,6 +20,6 @@ function Update (){
 
 function Dead()
 {
-yield WaitForSeconds(5);
-Destroy (gameObject);
+	yield WaitForSeconds(5);
+	Destroy (gameObject);
 }

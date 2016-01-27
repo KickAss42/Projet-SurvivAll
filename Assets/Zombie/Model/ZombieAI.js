@@ -72,5 +72,5 @@ function ApplyDammage(){
 
 function Findhealth()
 {
-    Target = GameObject.Find ("PlayerStats").GetComponent(PlayerStats).transform;
+    Target = GameObject.FindGameObjectWithTag ("Player").transform;
 }

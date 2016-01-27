@@ -1,8 +1,19 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Aiming.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NetworkSpawn.cs">
     <Files>
+      <File FileName="Assets\Character Zombie\Mesh\ZombieHealth.js" Line="6" Column="32" />
+      <File FileName="Assets\Zombie\Model\ZombieAI.js" Line="1" Column="1" />
+      <File FileName="Assets\alexis\AI\script\PlayerStats.js" Line="24" Column="32" />
+      <File FileName="Assets\alexis\AI\script\Mob.cs" Line="1" Column="1" />
+      <File FileName="Assets\alexis\AI\script\MobMouve.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Aiming.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ShotEject.cs" Line="1" Column="1" />
+      <File FileName="Assets\alexis\spawn\Spawner.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DestroyBullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\Character Zombie\Mesh\LockRotations.js" Line="5" Column="86" />
+      <File FileName="Assets\Scripts\EnnemiHealth.cs" Line="10" Column="1" />
+      <File FileName="Assets\Scripts\NetworkSpawn.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

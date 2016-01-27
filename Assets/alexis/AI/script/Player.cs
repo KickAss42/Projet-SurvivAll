@@ -6,6 +6,27 @@ public class Player : MonoBehaviour {
 
     public static int vie = 100;
     public static int score = 0;
+	public static bool hasKey = false;
+
+	void OnTriggerEnter (Collider col)
+	{
+		if (col.gameObject.name == "Key") {
+			hasKey = true;
+			Destroy (col.gameObject);
+		} else if (col.gameObject.name == "door")
+		{
+			if (hasKey) 
+			{
+				Destroy (col.gameObject);
+			}
+			else 
+			{
+				
+			}
+		}
+	}
+
+
     void Start ()
     {
         PlayerPrefs.SetString("lastlevel", Application.loadedLevelName);

@@ -18,6 +18,8 @@ public class Mob : MonoBehaviour
     public static int vie = 5;
     public static bool isDead = false;
     public TextMesh barreVie;
+	public float spawnPoints= 3f;
+	public Transform[] spawnPoint;
 
     void Start()
     {
@@ -110,7 +112,7 @@ public class Mob : MonoBehaviour
                 {
                     Application.LoadLevel("Jeu2");
                 }
-            }
+			}
         }
     }
 

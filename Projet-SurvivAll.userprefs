@@ -1,12 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnemyHealth.cs">
     <Files>
-      <File FileName="Assets\Scripts\ScoreManager.cs" Line="28" Column="2" />
-      <File FileName="Assets\Scripts\EnemyHealth.cs" Line="7" Column="27" />
-      <File FileName="Assets\Scripts\EnemyAttack.cs" Line="1" Column="1" />
-      <File FileName="Assets\Character Zombie\Mesh\ZombieHealth.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\EnemyManager.cs" Line="5" Column="11" />
+      <File FileName="Assets\map2\GameOverManager.cs" Line="39" Column="2" />
+      <File FileName="Assets\Scripts\EnemyHealth.cs" Line="54" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

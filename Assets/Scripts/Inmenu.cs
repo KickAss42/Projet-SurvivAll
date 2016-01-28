@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HealthBar : MonoBehaviour {
+public class Inmenu : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	void Start () {Screen.lockCursor = false;
+		UnityEngine.Cursor.visible = true;
 	
 	}
 	

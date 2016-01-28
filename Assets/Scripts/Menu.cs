@@ -15,9 +15,10 @@ public class Menu : MonoBehaviour {
 		{
 			SceneManager.LoadScene("JeuLocal");
 		}
-		if(GUI.Button(new Rect(Screen.width/2 -(buttonWidth/2),(2*Screen.height/9)-(buttonHeight/2) + 2* buttonHeight,buttonWidth,buttonHeight),"Start Multi !"))
+		if(GUI.Button(new Rect(Screen.width/2 -(buttonWidth/2),(2*Screen.height/9)-(buttonHeight/2) + 2* buttonHeight,buttonWidth,buttonHeight),"Start Survival !"))
 		{
-			SceneManager.LoadScene("Menu");
+			SceneManager.LoadScene("map 2");
+
 		}
 		if(GUI.Button(new Rect(Screen.width/2 -(buttonWidth/2),(2*Screen.height/9)-(buttonHeight/2) + 4 * buttonHeight,buttonWidth,buttonHeight),"Quit"))
 		{

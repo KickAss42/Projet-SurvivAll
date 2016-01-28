@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -11,8 +12,7 @@ public class EnemyHealth : MonoBehaviour
 	Animator anim;                              // Reference to the animator.
 	AudioSource enemyAudio;                     // Reference to the audio source.
 	CapsuleCollider capsuleCollider;            // Reference to the capsule collider.
-	Collision col;
-	bool isDead = false;                                // Whether the enemy is dead.
+	bool IsDead = false;
 
 
 	void Awake ()
@@ -26,36 +26,31 @@ public class EnemyHealth : MonoBehaviour
 		currentHealth = startingHealth;
 	}
 
-	void Update()
-	{
-		// If the current health is less than or equal to zero...
-		if((currentHealth <= 0 ) & !isDead)
-		{
-			// ... the enemy is dead.
-			Death ();
-		}
-	}
-
 	void OnCollisionEnter (Collision col)
 	{
 		if (col.gameObject.tag == "Ammo") {
 			currentHealth -= 25;
 			enemyAudio.Play ();
 		}
+		if(currentHealth <= 0 & !IsDead)
+		{
+			// ... the enemy is dead.
+			Death ();
+		}
 	}
 
 	void Death ()
 	{
-		isDead = true;
-		// Tell the animator that the enemy is dead.
+		IsDead = !IsDead;
 		anim.SetTrigger ("Dead");
-		anim.Play("Death_Shooting");
+		gameObject.GetComponent<ZombieAI>().enabled = false;
+		gameObject.GetComponent<CharacterController>().enabled =false;
 
 		// Change the audio clip of the audio source to the death clip and play it (this will stop the hurt clip playing).
 		enemyAudio.clip = deathClip;
-		enemyAudio.Play ();
+		enemyAudio.Play();
 
 		ScoreManager.score += scoreValue;
-		Destroy (gameObject, 5f);
+		Destroy (gameObject, 3f);
 	}
 }

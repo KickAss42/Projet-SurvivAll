@@ -22,7 +22,6 @@ public class PlayerHealth : MonoBehaviour
 	void Awake ()
 	{
 		// Setting up the references.
-		anim = GetComponent <Animator> ();
 		playerAudio = GetComponent <AudioSource> ();
 
 		// Set the initial health of the player.
@@ -77,10 +76,6 @@ public class PlayerHealth : MonoBehaviour
 	{
 		// Set the death flag so this function won't be called again.
 		isDead = true;
-
-		// Tell the animator that the player is dead.
-		anim.SetTrigger ("Die");
-
 		// Set the audiosource to play the death clip and play it (this will stop the hurt sound from playing).
 		playerAudio.clip = deathClip;
 		playerAudio.Play ();

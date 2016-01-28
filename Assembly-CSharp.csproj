@@ -45,15 +45,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts hamza\BulletHole.cs" />
+     <Compile Include="Assets\Scripts hamza\ExplosionZone.cs" />
+     <Compile Include="Assets\Scripts hamza\LaderClimbing.cs" />
+     <Compile Include="Assets\Scripts hamza\ScpeialWeapon.cs" />
+     <Compile Include="Assets\Scripts hamza\ThrowGrenades.cs" />
      <Compile Include="Assets\Scripts\Aiming.cs" />
      <Compile Include="Assets\Scripts\DestroyBullet.cs" />
      <Compile Include="Assets\Scripts\EnemyAttack.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />
-     <Compile Include="Assets\Scripts\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\EnemyMovement.cs" />
      <Compile Include="Assets\Scripts\EnnemiHealth.cs" />
      <Compile Include="Assets\Scripts\EnnemyMulti.cs" />
-     <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\Inmenu.cs" />
+     <Compile Include="Assets\Scripts\LoadOnClick.cs" />
+     <Compile Include="Assets\Scripts\LoadOnClick1.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\MenuPause.cs" />
      <Compile Include="Assets\Scripts\NetworkSpawn.cs" />
@@ -95,6 +101,9 @@
      <Compile Include="Assets\alexis\AK\Done\DoneScripts\UnappliedScripts\DoneAnimatorSetup.cs" />
      <Compile Include="Assets\alexis\AK\Done\DoneScripts\UnappliedScripts\DoneTags.cs" />
      <Compile Include="Assets\alexis\AK\Done\DoneScripts\UnappliedScripts\guiTextSet.cs" />
+     <Compile Include="Assets\map2\EnemyManager.cs" />
+     <Compile Include="Assets\map2\GameOverManager.cs" />
+     <Compile Include="Assets\map2\ZombieAI.cs" />
      <Compile Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\BlurEffect.cs" />
      <Compile Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\ColorCorrectionEffect.cs" />
      <Compile Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\ContrastStretchEffect.cs" />
@@ -131,6 +140,7 @@
      <None Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
      <None Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
      <None Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
      <None Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
@@ -174,6 +184,7 @@
      <None Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectX.shader" />
      <None Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlobalFog.shader" />
      <None Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\SciFiWeaponsPack1\readme.txt" />
      <None Include="Assets\nouvelle map ville deserte\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

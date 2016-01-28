@@ -16,7 +16,6 @@ public class ShotEject : MonoBehaviour {
     public AudioClip fallSound;
     public int maxClip = 30;
     public int reserve = 300;
-    public ParticleSystem laser;
     
 
 
@@ -26,8 +25,8 @@ public class ShotEject : MonoBehaviour {
         {
             if (clip > 0)
             {
-                Instantiate(muzzleFlash, transform.position, transform.rotation);
                 GetComponent<AudioSource>().PlayOneShot(shotSound);
+				Renderer flash = Instantiate(muzzleFlash, transform.position, transform.rotation) as Renderer;
                 GetComponent<AudioSource>().PlayOneShot(fallSound);
                 nextFire = Time.time + fireRate;
                 Rigidbody bullet = Instantiate(bulletCasing, transform.position, transform.rotation) as Rigidbody;

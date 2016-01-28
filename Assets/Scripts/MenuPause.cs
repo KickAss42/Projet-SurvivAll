@@ -28,7 +28,7 @@ public class MenuPause : MonoBehaviour {
 
 			if (GUI.Button (new Rect (Screen.width / 2 - 40, Screen.height / 2 + 40, 80, 40), "Quitter")) 
 			{
-				SceneManager.LoadScene ("StartMenu");
+				SceneManager.LoadScene ("Menu");
 				Screen.lockCursor = false;
 				UnityEngine.Cursor.visible = true;
 			}

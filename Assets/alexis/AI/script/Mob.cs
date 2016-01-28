@@ -28,7 +28,6 @@ public class Mob : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.Find("Player");
     }
-
     /*void OnTriggerEnter(Collider col)
 	{
 		if(col.gameObject.name == "Player")

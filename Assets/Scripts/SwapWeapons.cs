@@ -5,12 +5,14 @@ public class SwapWeapons : MonoBehaviour {
 
 	public GameObject Primary;
 	public GameObject Secondary;
+    public GameObject Third;
 
 	// Use this for initialization
 	void Start () 
 	{
 		Primary.SetActive (true);
 		Secondary.SetActive (false);
+        Third.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -19,11 +21,13 @@ public class SwapWeapons : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Alpha1)) {
 			Primary.SetActive (true);
 			Secondary.SetActive (false);
-		}
+            Third.SetActive(false);
+        }
 
 		if (Input.GetKeyDown (KeyCode.Alpha2)) {
 			Primary.SetActive (false);
 			Secondary.SetActive (true);
-		}
+            Third.SetActive(false);
+        }
 	}
 }

@@ -4,6 +4,7 @@ using System.Collections;
 public class ShotEject : MonoBehaviour {
 
     public Rigidbody bulletCasing;
+    public Renderer muzzleFlash;
     public int ejectSpeed = 100;
     public double fireRate = .5;
     private double nextFire = .0;
@@ -15,7 +16,8 @@ public class ShotEject : MonoBehaviour {
     public AudioClip fallSound;
     public int maxClip = 30;
     public int reserve = 300;
-
+    public ParticleSystem laser;
+    
 
 
     void Update()
@@ -24,12 +26,14 @@ public class ShotEject : MonoBehaviour {
         {
             if (clip > 0)
             {
+                Instantiate(muzzleFlash, transform.position, transform.rotation);
+                GetComponent<AudioSource>().PlayOneShot(shotSound);
+                GetComponent<AudioSource>().PlayOneShot(fallSound);
                 nextFire = Time.time + fireRate;
                 Rigidbody bullet = Instantiate(bulletCasing, transform.position, transform.rotation) as Rigidbody;
                 clip--;
                 bullet.velocity = transform.TransformDirection(Vector3.left * ejectSpeed);
-                GetComponent<AudioSource>().PlayOneShot(shotSound);
-                GetComponent<AudioSource>().PlayOneShot(fallSound);
+                
             }
         }
 
@@ -40,17 +44,7 @@ public class ShotEject : MonoBehaviour {
 
         if(Input.GetKeyDown("r") & (clip != maxClip) & (reserve != 0))
         {
-            GetComponent<AudioSource>().PlayOneShot(reloadSound);
-            if(reserve >= maxClip - clip)
-            {
-                RemoveReserve();
-                clip += maxClip - clip;
-            }
-            else
-            {
-                clip += reserve;
-                RemoveReserve();                
-            }
+            StartCoroutine(Reload(1.5f));
         }
 
         if (fullAuto == true)
@@ -75,6 +69,22 @@ public class ShotEject : MonoBehaviour {
         if (reserve <= 0)
         {
             reserve = 0;
+        }
+    }
+
+    IEnumerator Reload(float wait)
+    {
+        GetComponent<AudioSource>().PlayOneShot(reloadSound);
+        yield return new WaitForSeconds(wait);
+        if (reserve >= maxClip - clip)
+        {
+            RemoveReserve();
+            clip += maxClip - clip;
+        }
+        else
+        {
+            clip += reserve;
+            RemoveReserve();
         }
     }
 }

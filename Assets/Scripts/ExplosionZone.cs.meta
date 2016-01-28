@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 2827e6da03b285a4a9de2cc12e50f01a
+timeCreated: 1450029314
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - grenade: {fileID: 5481462, guid: 5187b79e45d1c184190fd0d8c72f9768, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

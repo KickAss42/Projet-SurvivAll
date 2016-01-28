@@ -10,11 +10,19 @@ public class Player : MonoBehaviour {
 
 	void OnTriggerEnter (Collider col)
 	{
+        if (col.gameObject.tag =="SpecialWeapon")
+        {
+            Destroy(col.gameObject);
+            (GetComponent<SwapWeapons>().Third).SetActive(true);
+            (GetComponent<SwapWeapons>().Primary).SetActive(false);
+            (GetComponent<SwapWeapons>().Secondary).SetActive(false);
+        }
 		if (col.gameObject.name == "Key") {
 			hasKey = true;
 			Destroy (col.gameObject);
-		} else if (col.gameObject.name == "door")
-		{
+		}
+        else if (col.gameObject.name == "door")
+        {
 			if (hasKey) 
 			{
 				Destroy (col.gameObject);

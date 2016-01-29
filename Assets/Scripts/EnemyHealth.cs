@@ -51,6 +51,6 @@ public class EnemyHealth : MonoBehaviour
 		enemyAudio.Play();
 
 		ScoreManager.score += scoreValue;
-		Destroy (gameObject, 3f);
+		Destroy (gameObject, 1f);
 	}
 }
